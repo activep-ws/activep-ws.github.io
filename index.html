@@ -19,23 +19,28 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-  <script src="js/modernizr.js"></script> 
+  <script src="js/modernizr.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./stuff/js/fontawesome.all.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
   <style>
-    .mySlides {display:none;}
-    figure { margin: auto; }
-    .w3-button {
-        color: #007ea7;
-        /* padding: 10px 20px; */
-        border: none;
-        cursor: pointer;
-        font-size: 40px;
+    .mySlides {
+      display: none;
     }
-    
-    </style>
+
+    figure {
+      margin: auto;
+    }
+
+    .w3-button {
+      color: #007ea7;
+      /* padding: 10px 20px; */
+      border: none;
+      cursor: pointer;
+      font-size: 40px;
+    }
+  </style>
 
 </head>
 
@@ -47,8 +52,9 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- Logo image instead of title text -->
-            <img src="stuff/images/logos/logo_ws_horizontal.png" alt="Active Perception Workshop Logo" style="max-height: 400px; width: auto; padding: 20px;">
-            
+            <img src="stuff/images/logos/logo_ws_horizontal.png" alt="Active Perception Workshop Logo"
+              style="max-height: 400px; width: auto; padding: 20px;">
+
             <!-- Optional subtitle -->
             <p class="title is-3 publication-title" style="color: #ffff">Bridging Sensing, Planning and Interaction</p>
             <h2 class="is-is-5" style="color: #ffff">(candidate) in conjunction with IROS</h2>
@@ -78,256 +84,308 @@
 
   <section class="section" id="overview">
     <div class="container is-max-desktop content">
-      <h2 class="title">Overview</h2>      
+      <h2 class="title">Overview</h2>
       <p>
-        Active Perception is a key component in robotics, enabling systems to dynamically acquire useful information 
-        by optimizing their sensing strategies. This workshop will explore the intersection of <b>sensor placement, planning, 
-        and interaction</b>, addressing challenges in <b>uncertainty-aware decision-making, localization, and multi-robot coordination</b>.  
+        Active Perception is a key component in robotics, enabling systems to dynamically acquire useful information
+        by optimizing their sensing strategies. This workshop will explore the intersection of <b>sensor placement,
+          planning,
+          and interaction</b>, addressing challenges in <b>uncertainty-aware decision-making, localization, and
+          multi-robot coordination</b>.
       </p>
       <p>
-        Topics will include <b>deep learning-driven perception, reinforcement learning for sensor selection, multi-robot exploration, 
-        and perception through interaction</b>. The event aims to bridge the gap between planning-driven robotics approaches 
+        Topics will include <b>deep learning-driven perception, reinforcement learning for sensor selection, multi-robot
+          exploration,
+          and perception through interaction</b>. The event aims to bridge the gap between planning-driven robotics
+        approaches
         and perception-focused strategies.
       </p>
     </div>
 
-     
+
     <!-- START SWIPER -->
-      
-      <div class="container is-max-desktop content">
-          <div class="swiper-container">
-              <div class="swiper-wrapper">
-      
-                  <div class="w3-content w3-display-container">
-                      <!-- Slide 1 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/obr.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Manipulation and Grasping</h3>
-                              <p class="is-size-6">Robot arms and hands adjust their pose, force, or tactile sensing to better understand objects before grasping them.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Slide 2 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/rarm.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Exploration & Mapping (SLAM)</h3>
-                              <p class="is-size-6">Robots actively plan their viewpoints to improve Simultaneous Localization and Mapping (SLAM) efficiency and accuracy.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Slide 3 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/robot.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Exploration & Mapping (SLAM)</h3>
-                              <p class="is-size-6">Robots actively plan their viewpoints to improve Simultaneous Localization and Mapping (SLAM) efficiency and accuracy.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Slide 4 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/sf.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Sensor Fusion</h3>
-                              <p class="is-size-6">Actively combining information from RGB, LiDAR, radar, thermal, event cameras (...) to improve perception.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Slide 5 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/planning.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Next-Best-View Planning</h3>
-                              <p class="is-size-6">Deciding where to move sensors next for better perception in tasks like localization, mapping, or object search.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Slide 6 -->
-                      <div class="mySlides has-text-centered">
-                          <figure class="image is-128x128 is-inline-block">
-                              <img src="stuff/images/others/media.png" style="width:100%">
-                          </figure>
-                          <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
-                              <h3 class="title is-5">Uncertainty-Aware Planning</h3>
-                              <p class="is-size-6">Robots actively gather missing or uncertain information to improve their models and make better decisions.</p>
-                          </div>
-                      </div>
-      
-                      <!-- Navigation Buttons -->
-                      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                      <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      
-                  </div>
-      
+
+    <div class="container is-max-desktop content">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="w3-content w3-display-container">
+            <!-- Slide 1 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/obr.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Manipulation and Grasping</h3>
+                <p class="is-size-6">Robot arms and hands adjust their pose, force, or tactile sensing to better
+                  understand objects before grasping them.</p>
               </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/rarm.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Exploration & Mapping (SLAM)</h3>
+                <p class="is-size-6">Robots actively plan their viewpoints to improve Simultaneous Localization and
+                  Mapping (SLAM) efficiency and accuracy.</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/robot.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Exploration & Mapping (SLAM)</h3>
+                <p class="is-size-6">Robots actively plan their viewpoints to improve Simultaneous Localization and
+                  Mapping (SLAM) efficiency and accuracy.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/sf.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Sensor Fusion</h3>
+                <p class="is-size-6">Actively combining information from RGB, LiDAR, radar, thermal, event cameras (...)
+                  to improve perception.</p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/planning.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Next-Best-View Planning</h3>
+                <p class="is-size-6">Deciding where to move sensors next for better perception in tasks like
+                  localization, mapping, or object search.</p>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="mySlides has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img src="stuff/images/others/media.png" style="width:100%">
+              </figure>
+              <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16">
+                <h3 class="title is-5">Uncertainty-Aware Planning</h3>
+                <p class="is-size-6">Robots actively gather missing or uncertain information to improve their models and
+                  make better decisions.</p>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
           </div>
+
+        </div>
       </div>
-      
-      <script>
+    </div>
+
+    <script>
       var slideIndex = 1;
       showDivs(slideIndex);
-      
+
       function plusDivs(n) {
-          showDivs(slideIndex += n);
+        showDivs(slideIndex += n);
       }
-      
+
       function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
       }
-      </script>
+    </script>
 
     <!-- END SWIPER -->
 
-      
+
 
     <!-- Container for Two Side-by-Side Images -->
     <div class="container is-max-desktop content">
-    <div class="columns is-centered">
-    <div class="column is-half has-text-centered">
-      <figure class="image is-3by2">
-        <img src="stuff/images/others/poster.jpg" alt="Poster Presentation and Highlight Talks">
-      </figure>
-      <p class="is-size-6"><b>Poster Presentation and Highlight Talks</b></p>
+      <div class="columns is-centered">
+        <div class="column is-half has-text-centered">
+          <figure class="image is-3by2">
+            <img src="stuff/images/others/poster.jpg" alt="Poster Presentation and Highlight Talks">
+          </figure>
+          <p class="is-size-6"><b>Poster Presentation and Highlight Talks</b></p>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="column is-half has-text-centered">
+          <figure class="image is-3by2">
+            <img src="stuff/images/others/talk.jpg" alt="Speakers from Diverse Application Areas">
+          </figure>
+          <p class="is-size-6"><b>Speakers from Diverse Application Areas</b></p>
+        </div>
+      </div>
     </div>
 
-    <!-- Image 2 -->
-    <div class="column is-half has-text-centered">
-      <figure class="image is-3by2">
-        <img src="stuff/images/others/talk.jpg" alt="Speakers from Diverse Application Areas">
-      </figure>
-      <p class="is-size-6"><b>Speakers from Diverse Application Areas</b></p>
-    </div>
-    </div>
     </div>
 
-    </div>
-    
   </section>
 
   <section class="section" id="speakers">
     <div class="container is-max-desktop content">
       <h2 class="title has-text-centered">Keynote Speakers 🎤</h2>
       <div class="columns is-multiline is-centered">
-  
+
         <!-- Marija Popovic -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=XON8iQoAAAAJ&citpid=13" alt="Marija Popovic">
-              </figure>
+          <a href="https://www.tudelft.nl/en/staff/m.popovic/?cHash=9c4e89537f3df185c588b06c8bece9d2" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=XON8iQoAAAAJ&citpid=13"
+                    alt="Marija Popovic">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Marija Popovic</p>
+                <p class="subtitle is-6">TU Delft</p>
+                <p><b>Talk:</b> Reinforcement Learning for Active Perception using UAVs</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://www.tudelft.nl/en/staff/m.popovic/?cHash=9c4e89537f3df185c588b06c8bece9d2" target="_blank">Marija Popovic</a></p>
-              <p class="subtitle is-6">TU Delft</p>
-              <p><b>Talk:</b> Reinforcement Learning for Active Perception using UAVs</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
         <!-- Boyu Zhou -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://boyuzhou.net/assets/img/about2.jpg" alt="Boyu Zhou">
-              </figure>
+          <a href="https://boyuzhou.net/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="https://boyuzhou.net/assets/img/about2.jpg" alt="Boyu Zhou">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Boyu Zhou</p>
+                <p class="subtitle is-6">SUSTech</p>
+                <p><b>Talk:</b> Autonomous Exploration: From Traditional to AI-driven Approaches</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://boyuzhou.net/" target="_blank">Boyu Zhou</a></p>
-              <p class="subtitle is-6">SUSTech</p>
-              <p><b>Talk:</b> Autonomous Exploration: From Traditional to AI-driven Approaches</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
         <!-- Stefan Leutenegger -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SmGQ48gAAAAJ&citpid=5" alt="Stefan Leutenegger">
-              </figure>
+          <a href="https://srl.cit.tum.de/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SmGQ48gAAAAJ&citpid=5"
+                    alt="Stefan Leutenegger">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Stefan Leutenegger</p>
+                <p class="subtitle is-6">TU Munich</p>
+                <p><b>Talk:</b> Exploration with Drones for Geometric and Semantic Reconstruction in the Wild</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://srl.cit.tum.de/" target="_blank">Stefan Leutenegger</a></p>
-              <p class="subtitle is-6">TU Munich</p>
-              <p><b>Talk:</b> Exploration with Drones for Geometric and Semantic Reconstruction in the Wild</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
         <!-- Sebastian Scherrer -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=gxoPfIYAAAAJ&citpid=3" alt="Sebastian Scherrer">
-              </figure>
+          <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=gxoPfIYAAAAJ&citpid=3"
+                    alt="Sebastian Scherrer">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Sebastian Scherrer</p>
+                <p class="subtitle is-6">CMU</p>
+                <p><b>Talk:</b> Multi-Robot Information Gathering in Challenging Environments</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/" target="_blank">Sebastian Scherrer</a></p>
-              <p class="subtitle is-6">CMU</p>
-              <p><b>Talk:</b> Multi-Robot Information Gathering in Challenging Environments</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
         <!-- Jen Jen Chung -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FpzRM5UAAAAJ&citpid=6" alt="Jen Jen Chung">
-              </figure>
+          <a href="https://jenjenchung.github.io/anthropomorphic/" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FpzRM5UAAAAJ&citpid=6"
+                    alt="Jen Jen Chung">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Jen Jen Chung</p>
+                <p class="subtitle is-6">UQ</p>
+                <p><b>Talk:</b> Perception Through Interaction</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://jenjenchung.github.io/anthropomorphic/" target="_blank">Jen Jen Chung</a></p>
-              <p class="subtitle is-6">UQ</p>
-              <p><b>Talk:</b> Perception Through Interaction</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
-        <!-- Vijay Kumar -->
-        <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FUOEBDUAAAAJ&citpid=2" alt="Vijay Kumar">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6"><a href="https://www.kumarrobotics.org/" target="_blank">Vijay Kumar</a></p>
-              <p class="subtitle is-6">UPenn</p>
-              <p><b>Talk:</b> [TBA]</p>
-            </div>
-          </div>
-        </div>
-  
+
+        <!-- Vijay Kumar
+<div class="column is-one-third has-text-centered">
+  <a href="https://www.kumarrobotics.org/" target="_blank" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <div class="card-image is-flex is-justify-content-center">
+        <figure class="image is-128x128">
+          <img class="is-rounded" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FUOEBDUAAAAJ&citpid=2" alt="Vijay Kumar">
+        </figure>
+      </div>
+      <div class="card-content">
+        <p class="title is-6">Vijay Kumar</p>
+        <p class="subtitle is-6">UPenn</p>
+        <p><b>Talk:</b> [TBA]</p>
       </div>
     </div>
+  </a>
+</div> -->
+
+        <!-- Benjamin Mottis -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://www.linkedin.com/in/benjamin-mottis/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ch"
+            target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQEG9un_CeKirw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699810201850?e=2147483647&v=beta&t=y1BNcXwcKBLqSQj8sczIy1OcQYjI71wscxrl7FwlMB8"
+                    alt="Benjamin Mottis">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Benjamin Mottis</p>
+                <p class="subtitle is-6">ANYbotics</p>
+                <p><b>Talk:</b> Creating a Workforce of Autonomous Robots</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
   </section>
-  
+
 
 
   <!-- <section class="section" id="schedule">
@@ -385,16 +443,18 @@
   <section class="section" id="challenge">
     <div class="container is-max-desktop content">
       <h2 class="title has-text-centered">Active Localization Challenge 🚀</h2>
-  
+
       <div class="columns is-vcentered">
-        
+
         <!-- Left: Challenge Text -->
         <div class="column">
           <p>
-            You are provided with a sparse map of the environment and assume to have a robot equipped with a camera that can freely rotate with respect to the mobile base. 
-            Given some robot waypoints, the goal is to rotate the camera towards more meaningful parts of the map, improving localization accuracy.
+            You are provided with a sparse map of the environment and assume to have a robot equipped with a camera that
+            can freely rotate with respect to the mobile base.
+            Given some robot waypoints, the goal is to rotate the camera towards more meaningful parts of the map,
+            improving localization accuracy.
           </p>
-  
+
           <!-- Call to Action Button -->
           <div class="has-text-centered" style="margin-top: 20px;">
             <a href="" class="button">
@@ -402,14 +462,14 @@
             </a>
           </div>
         </div>
-  
+
         <!-- Right: Image -->
         <div class="column is-one-third has-text-centered">
           <figure class="image is-256x256">
             <img src="stuff/images/others/actloc.png" alt="Active Localization Challenge">
           </figure>
         </div>
-  
+
       </div>
     </div>
   </section>
@@ -423,148 +483,178 @@
           <a href="" target="_blank">Title</a> – Conf Year
         </li>
       </ul>
-      <p>It is just a short item list of relevant papers, we might have missed some nice works. 
-         If you feel your work is missing please contact: digiammarino[at]diag.uniroma1.it</p>
+      <p>It is just a short item list of relevant papers, we might have missed some nice works.
+        If you feel your work is missing please contact: digiammarino[at]diag.uniroma1.it</p>
     </div>
   </section>
-  
+
 
 
   <section class="section" id="organizers">
     <div class="container is-max-desktop content">
       <h2 class="title has-text-centered">Organizers</h2>
       <div class="columns is-multiline is-centered">
-  
+
+        <!-- Luca Di Giammarino -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/digiamm.png" alt="Luca Di Giammarino">
-              </figure>
+          <a href="https://digiamm.github.io/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/digiamm.png" alt="Luca Di Giammarino">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Luca Di Giammarino</p>
+                <p class="subtitle is-6">Sapienza University of Rome</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6">Luca Di Giammarino</p>
-              <p class="subtitle is-6">Sapienza University of Rome</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/boyang.jpg" alt="Boyang Sun">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6">Boyang Sun</p>
-              <p class="subtitle is-6">ETH Zurich</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/lukas.jpg" alt="Lukas Schmid">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6">Lukas Schmid</p>
-              <p class="subtitle is-6">MIT</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://zuriabauer.com/assets/images/ZBauer.png" alt="Zuria Bauer">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6">Zuria Bauer</p>
-              <p class="subtitle is-6">ETH Zurich</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/hermann.jpg" alt="Hermann Blum">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6">Hermann Blum</p>
-              <p class="subtitle is-6">University of Bonn</p>
-            </div>
-          </div>
+          </a>
         </div>
 
-         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/marc.jpg" alt="Marc Pollefeys">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title is-6">Marc Pollefeys</p>
-              <p class="subtitle is-6">ETH Zurich, Microsoft</p>
-            </div>
-          </div>
-        </div>
-  
+        <!-- Boyang Sun -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="https://lucacarlone.mit.edu/wp-content/uploads/2017/07/Screen-Shot-2017-09-15-at-21.48.34.png" alt="Organizer 6">
-              </figure>
+          <a href="https://boysun045.github.io/boysun-website/" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/boyang.jpg" alt="Boyang Sun">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Boyang Sun</p>
+                <p class="subtitle is-6">ETH Zurich</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6">Luca Carlone</p>
-              <p class="subtitle is-6">MIT</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
+        <!-- Lukas Schmid -->
         <div class="column is-one-third has-text-centered">
-          <div class="card">
-            <div class="card-image is-flex is-justify-content-center">
-              <figure class="image is-128x128">
-                <img class="is-rounded" src="stuff/images/organizers/marg.jpg" alt="Margarita Chli">
-              </figure>
+          <a href="https://schmluk.github.io/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/lukas.jpg" alt="Lukas Schmid">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Lukas Schmid</p>
+                <p class="subtitle is-6">MIT</p>
+              </div>
             </div>
-            <div class="card-content">
-              <p class="title is-6">Margarita Chli</p>
-              <p class="subtitle is-6">University of Cyprus</p>
-            </div>
-          </div>
+          </a>
         </div>
-  
+
+        <!-- Zuria Bauer -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://zuriabauer.com/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="https://zuriabauer.com/assets/images/ZBauer.png" alt="Zuria Bauer">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Zuria Bauer</p>
+                <p class="subtitle is-6">ETH Zurich</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Hermann Blum -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://hermannblum.net/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/hermann.jpg" alt="Hermann Blum">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Hermann Blum</p>
+                <p class="subtitle is-6">University of Bonn</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Marc Pollefeys -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://cvg.ethz.ch/team/Prof-Dr-Marc-Pollefeys" target="_blank"
+            style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/marc.jpg" alt="Marc Pollefeys">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Marc Pollefeys</p>
+                <p class="subtitle is-6">ETH Zurich, Microsoft</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Luca Carlone -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://lucacarlone.mit.edu/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                    src="https://lucacarlone.mit.edu/wp-content/uploads/2017/07/Screen-Shot-2017-09-15-at-21.48.34.png"
+                    alt="Luca Carlone">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Luca Carlone</p>
+                <p class="subtitle is-6">MIT</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Margarita Chli -->
+        <div class="column is-one-third has-text-centered">
+          <a href="https://www.v4rl.com/" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-image is-flex is-justify-content-center">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="stuff/images/organizers/marg.jpg" alt="Margarita Chli">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-6">Margarita Chli</p>
+                <p class="subtitle is-6">University of Cyprus</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
-  
+
+
 </body>
 
 
 <section class="hero">
-    <div class="hero-body" style="background-color: #ffff;">
-      <div class="content" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; padding: 10px;">
-        <img src="stuff/images/logos/sap.png" style="height: 50px; padding: 2px; width: auto;" />
-        <img src="stuff/images/logos/eth.png" style="height: 50px; padding: 10px; width: auto;" />
-        <img src="stuff/images/logos/unibonn.jpeg" style="height: 50px; padding: 1px; width: auto;" />
-        <img src="stuff/images/logos/mit.png" style="height: 50px; padding: 2px; width: auto;" />
-        <img src="stuff/images/logos/mic.png" style="height: 50px; padding: 2px; width: auto;" />
-        <img src="stuff/images/logos/cyp.jpg" style="height: 50px; width: auto;" />
-      </div>
+  <div class="hero-body" style="background-color: #ffff;">
+    <div class="content"
+      style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; padding: 10px;">
+      <img src="stuff/images/logos/sap.png" style="height: 50px; padding: 2px; width: auto;" />
+      <img src="stuff/images/logos/eth.png" style="height: 50px; padding: 10px; width: auto;" />
+      <img src="stuff/images/logos/unibonn.jpeg" style="height: 50px; padding: 1px; width: auto;" />
+      <img src="stuff/images/logos/mit.png" style="height: 50px; padding: 2px; width: auto;" />
+      <img src="stuff/images/logos/mic.png" style="height: 50px; padding: 2px; width: auto;" />
+      <img src="stuff/images/logos/cyp.jpg" style="height: 50px; width: auto;" />
     </div>
+  </div>
 </section>
 
 
@@ -572,10 +662,10 @@
   <div class="container is-max-desktop content has-text-centered">
     <div class="content">
       <p>
-        This website is licensed under a <a rel="license"
-          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
           Commons Attribution-ShareAlike 4.0 International License</a>.
-          <br>Some source code is taken from <a href="https://github.com/nerfies/nerfies.github.io">this website</a>. The images in the slides have been taken from <a href="https://www.flaticon.com/">FLATICON</a>.
+        <br>Some source code is taken from <a href="https://github.com/nerfies/nerfies.github.io">this website</a>. The
+        images in the slides have been taken from <a href="https://www.flaticon.com/">FLATICON</a>.
       </p>
     </div>
   </div>
