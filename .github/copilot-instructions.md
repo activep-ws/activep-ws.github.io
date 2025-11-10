@@ -1,0 +1,22 @@
+# Active Perception Workshop – Agent Guide
+- **Site type**: Static GitHub Pages site; edits to `.html` files render directly with no build pipeline or asset bundling.
+- **Primary pages**: `index.html`, `challenge.html`, and `contrib.html` share the same head/footer and hero banner styling for consistency—mirror that structure when adding pages.
+- **Navigation**: The button strip inside `.hero.teaser` links to in-page anchors; add matching `id` attributes when creating new sections to avoid broken navigation.
+- **Homepage sections**: `index.html` owns the news gallery, schedule table, accepted paper table, challenge teaser, and organizers grid; updates happen in-place with Bulma columns and tables.
+- **News gallery**: Workshop photos live in `stuff/images/after/`; keep filenames lowercase with no spaces and update the three-column layout in the `id="news"` section accordingly.
+- **Schedule**: The agenda table in the `id="schedule"` section is manually maintained—preserve left column time formatting (`HH:MM – HH:MM`) to keep alignment tidy.
+- **Accepted papers**: PDFs reside in `accepted_papers/`; when adding entries, drop the file in that folder and create a `<tr>` with the same four-column structure so the table stays full-width.
+- **Call for contributions**: `contrib.html` mirrors the hero but trims navigation; adjust deadlines and OpenReview links there without touching `index.html` to avoid inconsistent messaging.
+- **Challenge page**: `challenge.html` contains submission and hardware requirements plus a deadline notice; keep the two submission pathways (`Public`/`Private`) in sync with the linked Google Form.
+- **Branding assets**: Logos and organizer portraits live under `stuff/images/logos/`, `stuff/images/organizers/`, and `stuff/images/others/`; supply alt text for every `<img>` to maintain accessibility.
+- **Styling**: Custom overrides live in `stuff/css/index.css`; prefer extending Bulma classes there instead of sprinkling new inline styles unless matching existing patterns.
+- **Fonts and palette**: The theme uses Google Fonts (`Google Sans`, `Noto Sans`, `Castoro`, `Lato`) and a primary teal with hex value 007ea7; reuse these values for visual coherence.
+- **External CSS/JS**: Bulma, Font Awesome, Academicons, Swiper, W3CSS, and jQuery are pulled from CDNs; verify those links match desired versions before introducing new dependencies.
+- **Legacy script tags**: The layout still references `css/style.css`, `js/modernizr.js`, and `js/main.js`, but those files are absent—either restore them if needed or remove the tags during cleanup to avoid 404s.
+- **Unused helpers**: `stuff/js/index.js` (from the Nerfies template) includes Bulma carousel and image slider utilities yet is not included anywhere; load or prune it deliberately if you reintroduce interactive components.
+- **Carousel support**: `stuff/js/bulma-carousel*.js` and `stuff/css/bulma-carousel.min.css` are vendored copies; if you add a carousel, hook them up via `<script>`/`<link>` rather than fetching new versions.
+- **Favicon**: Stored at `stuff/images/favicon.svg`; keep the `<link rel="icon">` pointing there if you change branding.
+- **Deployment**: Pushing to `main` publishes automatically because the repo name matches the GitHub Pages domain (`activep-ws.github.io`); no CI configuration exists.
+- **Local preview**: Serve the root with `python3 -m http.server 8000` and open `http://localhost:8000/index.html` to test changes before committing.
+- **Content tone**: Emojis (📰, 🏆, ⏰, 🚀) are part of the site voice; include them sparingly and match the friendly workshop tone when writing new copy.
+- **Link hygiene**: Most outbound links open in a new tab via `target="_blank"`; follow that convention for new resources so attendees don’t lose the site context.
